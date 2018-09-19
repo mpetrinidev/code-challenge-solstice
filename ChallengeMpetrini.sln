@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeMpetrini.Api", "ChallengeMpetrini.Api\ChallengeMpetrini.Api.csproj", "{ACB6AF4B-05B5-43E3-89FB-C9E74C4BD394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeMpetrini.Test", "ChallengeMpetrini.Test\ChallengeMpetrini.Test.csproj", "{56B67B08-21BE-4697-84CB-EC7F464D9426}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACB6AF4B-05B5-43E3-89FB-C9E74C4BD394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB6AF4B-05B5-43E3-89FB-C9E74C4BD394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB6AF4B-05B5-43E3-89FB-C9E74C4BD394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB6AF4B-05B5-43E3-89FB-C9E74C4BD394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B67B08-21BE-4697-84CB-EC7F464D9426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B67B08-21BE-4697-84CB-EC7F464D9426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B67B08-21BE-4697-84CB-EC7F464D9426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B67B08-21BE-4697-84CB-EC7F464D9426}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC5A28FF-9958-4CAF-9DE7-AB828350D7A3}
+	EndGlobalSection
+EndGlobal

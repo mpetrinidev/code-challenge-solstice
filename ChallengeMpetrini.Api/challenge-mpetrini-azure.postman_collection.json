@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "54eeb68f-07b3-4c03-b6c4-9905d70272e2",
+		"name": "challenge-mpetrini-azure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "ed8430dd-e8c6-4cdf-8856-472ba390be80",
+			"name": "create contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"John Calle\",\n\t\"company\": \"Company name\",\n\t\"profile_image\": \"https://s3.amazonaws.com/technical-challenge/v3/images/miss-piggy-small.jpg\",\n\t\"email\": \"dev1.mpetrini@gmail.com\",\n\t\"birthdate\": \"1992-08-24\",\n\t\"home_phone_number\": \"4288-4483\",\n\t\"work_phone_number\": \"4288-2123\",\n\t\"mobile_phone_number\": \"1122-1234\",\n\t\"address\": \"Rot 2391\",\n\t\"city_id\": 1\n}"
+				},
+				"url": {
+					"raw": "https://challenge-mpetrini.azurewebsites.net/api/contacts",
+					"protocol": "https",
+					"host": [
+						"challenge-mpetrini",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "2564d405-c3a3-4e7e-9d7a-bc0682d85151",
+			"name": "get all contacts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Mauro Petrini\",\n\t\"company\": \"Company name\",\n\t\"profile_image\": \"https://s3.amazonaws.com/technical-challenge/v3/images/miss-piggy-small.jpg\",\n\t\"email\": \"dev.mpetrini@gmail.com\",\n\t\"birthdate\": \"1992-08-24\",\n\t\"home_phone_number\": \"42026993\",\n\t\"work_phone_number\": \"42026993\",\n\t\"mobile_phone_number\": \"42026993\",\n\t\"address\": \"acevedo 3591\",\n\t\"city_id\": 1\n}"
+				},
+				"url": {
+					"raw": "https://challenge-mpetrini.azurewebsites.net/api/contacts",
+					"protocol": "https",
+					"host": [
+						"challenge-mpetrini",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "dd8c63fd-65c3-4e56-8afc-11cca4a48716",
+			"name": "get contact",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Mauro Petrini\",\n\t\"company\": \"Company name\",\n\t\"profile_image\": \"https://s3.amazonaws.com/technical-challenge/v3/images/miss-piggy-small.jpg\",\n\t\"email\": \"dev.mpetrini@gmail.com\",\n\t\"birthdate\": \"1992-08-24\",\n\t\"home_phone_number\": \"42026993\",\n\t\"work_phone_number\": \"42026993\",\n\t\"mobile_phone_number\": \"42026993\",\n\t\"address\": \"acevedo 3591\",\n\t\"city_id\": 1\n}"
+				},
+				"url": {
+					"raw": "https://challenge-mpetrini.azurewebsites.net/api/contacts/2",
+					"protocol": "https",
+					"host": [
+						"challenge-mpetrini",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"contacts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "ef46cb9e-be6f-46be-b9e9-c9ccf27c48eb",
+			"name": "update contact",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"name\": \"Mauro Gaston Petrini\",\n\t\"company\": \"Company nameee\",\n\t\"profile_image\": \"https://s3.amazonaws.com/technical-challenge/v3/images/miss-piggy-small.jpg\",\n\t\"email\": \"dev.mpetrini@gmail.com\",\n\t\"birthdate\": \"1992-08-24\",\n\t\"home_phone_number\": \"42026993\",\n\t\"work_phone_number\": \"42026993\",\n\t\"mobile_phone_number\": \"42026993\",\n\t\"address\": \"acevedo 3591\",\n\t\"city_id\": 1\n}"
+				},
+				"url": {
+					"raw": "https://challenge-mpetrini.azurewebsites.net/api/contacts",
+					"protocol": "https",
+					"host": [
+						"challenge-mpetrini",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "466c8a63-f770-40a0-bf52-42e5961683f1",
+			"name": "delete contact",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://challenge-mpetrini.azurewebsites.net/api/contacts/2",
+					"protocol": "https",
+					"host": [
+						"challenge-mpetrini",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"contacts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "838825fe-e69f-4a02-af2a-73e035369d71",
+			"name": "get by email or phone number",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Mauro Petrini\",\n\t\"company\": \"Company name\",\n\t\"profile_image\": \"https://s3.amazonaws.com/technical-challenge/v3/images/miss-piggy-small.jpg\",\n\t\"email\": \"dev.mpetrini@gmail.com\",\n\t\"birthdate\": \"1992-08-24\",\n\t\"home_phone_number\": \"42026993\",\n\t\"work_phone_number\": \"42026993\",\n\t\"mobile_phone_number\": \"42026993\",\n\t\"address\": \"acevedo 3591\",\n\t\"city_id\": 1\n}"
+				},
+				"url": {
+					"raw": "https://challenge-mpetrini.azurewebsites.net/api/contacts/search/dev.mpetrini@gmail.com",
+					"protocol": "https",
+					"host": [
+						"challenge-mpetrini",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"contacts",
+						"search",
+						"dev.mpetrini@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "ee881962-e722-40da-955f-3c453ca500e8",
+			"name": "get all from state or city",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Mauro Petrini\",\n\t\"company\": \"Company name\",\n\t\"profile_image\": \"https://s3.amazonaws.com/technical-challenge/v3/images/miss-piggy-small.jpg\",\n\t\"email\": \"dev.mpetrini@gmail.com\",\n\t\"birthdate\": \"1992-08-24\",\n\t\"home_phone_number\": \"42026993\",\n\t\"work_phone_number\": \"42026993\",\n\t\"mobile_phone_number\": \"42026993\",\n\t\"address\": \"acevedo 3591\",\n\t\"city_id\": 1\n}"
+				},
+				"url": {
+					"raw": "https://challenge-mpetrini.azurewebsites.net/api/contacts/getfrom/Phoenix",
+					"protocol": "https",
+					"host": [
+						"challenge-mpetrini",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"contacts",
+						"getfrom",
+						"Phoenix"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

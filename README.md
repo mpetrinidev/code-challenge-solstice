@@ -1,6 +1,6 @@
 # Code challenge
 
-Sample API in .NET Core 2.1 using **Visual Studio 2017 V15.8.4**
+Sample API in .NET Core 2.1 using **Visual Studio 2017 V15.8.4**. The data has been persisted using EF Core 2.1.
 
 # dotnet --info
 
@@ -20,6 +20,8 @@ Host (useful for support):
   Version: 2.1.4
   Commit:  85255dde3e
 ```
+## Restore
+Before beginning, run `dotnet restore` under `ChallengeMpetrini.Api` directory
 
 ## Run
 
@@ -46,3 +48,8 @@ Endpoints:
 
 ## Test examples in Postman
 
+Import [Postman xml config file](https://github.com/mpetrinidev/code-challenge-solstice/blob/master/ChallengeMpetrini.Api/challenge-mpetrini-azure.postman_collection.json). Collection is in version 2.1
+
+## Thanks!
+
+If you have any doubt, feel free to contact me at dev.mpetrini@gmail.com
